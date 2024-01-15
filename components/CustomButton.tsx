@@ -4,16 +4,13 @@ import React from "react";
 import classNames from "classnames";
 import { CustomButtonProps } from "@/types";
 
-const CustomButton = ({ title, containerStyles, handleClick }: CustomButtonProps) => {
-    console.log("containerStyles:", containerStyles);
-  
+const CustomButton = ({ title, containerStyles, handleClick, btnType }: CustomButtonProps) => {  
     const buttonClasses = classNames("custom-btn", containerStyles);
-    console.log("buttonClasses:", buttonClasses);
 
   return (
     <button
       disabled={false}
-      type="button"
+      type={btnType || "button"}
       className={buttonClasses}
       onClick={handleClick}
     >
