@@ -1,6 +1,6 @@
 "use client";
 
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/button/CustomButton";
 import React from "react";
 import Image from "next/image";
 
